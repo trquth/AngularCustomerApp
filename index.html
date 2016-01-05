@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="customersApp">
+<head>
+    <title>Customer Manager</title>
+    <link rel="stylesheet" type="text/css" href="/Content/CSS/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/Content/CSS/bootstrap-responsive.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/Content/CSS/customerManagementStyles.css"/>
+<body>
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="brand " href="#/">
+                <img src="Content/Images/people.png" alt="logo"> Customer Manager
+            </a>
+            <ul class="nav nav-pills" ng-controller="navBarController as navbar">
+                <li ng-class="{'active':navbar.getClass('/customers')}"><a href="#/customers">Customers</a></li>
+                <li ng-class="{'active':navbar.getClass('/orders')}"><a href="#/orders">Orders</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<ng-view></ng-view>
+<div id="footer">
+    <div class="navbar navbar-fixed-bottom">
+        <div class="navbar-inner">
+            <div class="container">
+                <footer>
+                    <div class="row">
+                        <div class="span4">
+                            Created by Dan Wahlin
+                        </div>
+                        <div class="span4">
+                            Twitter: <a href="http://twitter.com/DanWahlin">@DanWahlin</a>
+                        </div>
+                        <div class="span4">
+                            Blog: <a href="http://weblogs.asp.net/dwahlin">weblogs.asp.net/dwahlin</a>
+                        </div>
+                    </div>
+               </footer>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Vendor Libs: jQuery only used for Bootstrap functionality -->
+    <script type="text/javascript" src="/Content/JS/angular.min.js"></script>
+    <script type="text/javascript" src="/Content/JS/angular-route.js"></script>
+    <script type="text/javascript" src="/Content/JS/jquery.min.js"></script>
+
+    <!-- UI Libs -->
+    <script type="text/javascript" src="/Content/JS/bootstrap.min.js"></script>
+
+
+    <!-- App libs -->
+    <script type="text/javascript" src="/Scripts/app.js"></script>
+    <script type="text/javascript" src="/Scripts/services/customersService.js"></script>
+    <script type="text/javascript" src="/Scripts/controllers/customercontrollers.js"></script>
+    <script type="text/javascript" src="/Scripts/controllers/customerordercontrollers.js"></script>
+    <script type="text/javascript" src="/Scripts/controllers/orderchildcontroller.js"></script>
+    <script type="text/javascript" src="/Scripts/controllers/ordersController.js"></script>
+    <script type="text/javascript" src="/Scripts/directives/animatedView.js"></script>
+    <script type="text/javascript" src="/Scripts/controllers/navbarcontrollers.js"></script>
+</body>
+</html>

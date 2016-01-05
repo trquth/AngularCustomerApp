@@ -1,0 +1,107 @@
+body {
+  background: #d3d3d3;
+}
+
+.card {
+  color: #444;
+  background: white;
+  width:200px;
+  margin:5px;
+  float:left;
+  padding:10px;
+  box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+  transition: all 0.3s;
+  position: relative;
+  padding-top:50px;
+  height:100px;
+}
+
+.card-header {
+  user-select: none;
+  -webkit-user-select: none;
+  position: absolute;
+  top:0;
+  padding-top:10px;
+  padding-bottom: 10px;
+  color: white;
+  left:0;
+  background: tomato;
+  width:100%;
+  text-align: center;
+}
+
+.card-delete {
+  float: right !important;
+  margin-right: 10px;
+}
+
+.card-delete:hover {
+  cursor: pointer;
+}
+
+.card:hover{
+  box-shadow: 2px 2px 14px 0px rgba(50, 50, 50, 0.75);
+  transform: scale(0.7);
+}
+
+@media screen and (max-width:500px) {
+  .card {
+    width:80%;
+    float:none;
+    margin:0 auto;
+    margin-bottom: 10px;
+  }
+}body {
+  background: #d3d3d3;
+}
+
+.card {
+  color: #444;
+  background: white;
+  width:200px;
+  margin:5px;
+  float:left;
+  padding:10px;
+  box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+  transition: all 0.3s;
+  position: relative;
+  padding-top:50px;
+  height:100px;
+}
+
+.card-header {
+  user-select: none;
+  -webkit-user-select: none;
+  position: absolute;
+  top:0;
+  padding-top:10px;
+  padding-bottom: 10px;
+  color: white;
+  left:0;
+  background: tomato;
+  width:100%;
+  text-align: center;
+}
+
+.card-delete {
+  float: right !important;
+  margin-right: 10px;
+}
+
+.card-delete:hover {
+  cursor: pointer;
+}
+
+.card:hover{
+  box-shadow: 2px 2px 14px 0px rgba(50, 50, 50, 0.75);
+  transform: scale(0.7);
+}
+
+@media screen and (max-width:500px) {
+  .card {
+    width:80%;
+    float:none;
+    margin:0 auto;
+    margin-bottom: 10px;
+  }
+}
